@@ -1,6 +1,13 @@
 # handlers file for fail2ban
 ---
 - name: restart fail2ban
+  service:
+    name: fail2ban
+    state: restarted
+  when: ansible_service_mgr != 'systemd'
+
+- name: restart fail2ban
   systemd:
     name: fail2ban
     state: restarted
+  when: ansible_service_mgr == 'systemd'
