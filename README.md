@@ -1,8 +1,8 @@
 ## fail2ban
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-fail2ban.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-fail2ban) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-fail2ban-blue.svg)](https://galaxy.ansible.com/tersmitten/fail2ban)
+[![Build Status](https://travis-ci.org/nbigot/ansible-fail2ban.svg?branch=master)](https://travis-ci.org/nbigot/ansible-fail2ban) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-fail2ban-blue.svg)](https://galaxy.ansible.com/nbigot/fail2ban)
 
-Set up fail2ban in Debian-like systems.
+Set up fail2ban in RHEL / Centos and Ubuntu systems.
 
 #### Requirements
 
@@ -94,8 +94,8 @@ MIT
 
 #### Author Information
 
-Mischa ter Smitten (based on work of [ANXS](https://github.com/ANXS))
+Nicolas Bigot (based on work of Mischa ter Smitten [tersmitten](https://github.com/Oefenweb/ansible-fail2ban) (based on work of [ANXS](https://github.com/ANXS)))
 
 #### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/Oefenweb/ansible-fail2ban/issues)!
+Are [welcome](https://github.com/nbigot/ansible-fail2ban/issues)!

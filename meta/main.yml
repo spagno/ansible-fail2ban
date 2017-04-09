@@ -1,21 +1,18 @@
 # meta file for fail2ban
 ---
 galaxy_info:
-  author: Mischa ter Smitten
-  company: Oefenweb.nl B.V.
-  description: Set up fail2ban in Debian-like systems
+  author: Nicolas Bigot
+  description: Set up fail2ban in Ubuntu, RHEL-like, CentOS systems
   license: MIT
-  min_ansible_version: 1.9.6
+  min_ansible_version: 2.1.0
   platforms:
     - name: Ubuntu
       versions:
-        - precise
-        - trusty
         - xenial
-    - name: Debian
+        - yakkety
+    - name: EL
       versions:
-        - wheezy
-        - jessie
+        - 7
   galaxy_tags:
     - system
     - networking

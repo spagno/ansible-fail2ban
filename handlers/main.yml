@@ -1,6 +1,6 @@
 # handlers file for fail2ban
 ---
 - name: restart fail2ban
-  service:
+  systemd:
     name: fail2ban
     state: restarted

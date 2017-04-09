@@ -1,6 +1,6 @@
 ---
 sudo: required
-dist: trusty
+dist: xenial
 
 language: python
 python: "2.7"
@@ -16,12 +16,6 @@ env:
   - ANSIBLE_VERSION=2.1.2
   - ANSIBLE_VERSION=2.1.1.0
   - ANSIBLE_VERSION=2.1.0.0
-  - ANSIBLE_VERSION=2.0.2.0
-  - ANSIBLE_VERSION=2.0.1.0
-  - ANSIBLE_VERSION=2.0.0.2
-  - ANSIBLE_VERSION=2.0.0.1
-  - ANSIBLE_VERSION=2.0.0.0
-  - ANSIBLE_VERSION=1.9.6
 
 branches:
   only:
@@ -56,7 +50,4 @@ script:
 
 notifications:
   email: false
-  hipchat:
-    rooms:
-      secure: dPQbT83eLVZ7mHZgv/aF61OSoM828vnABPbLrlIfjyL7AWm4o8LaQmbREnF565oGogXakMJesrR8hhX0FFE5gOvuIjdBVzBt8iwicSPFKR8eqtgfwqg+H/KBvDP4QDVY52g1/iq7My48UZr7GnDK0lUVUMfN1XwXHpwr5txqKa0=
   webhooks: https://galaxy.ansible.com/api/v1/notifications/

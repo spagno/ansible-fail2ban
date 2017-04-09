@@ -1,11 +1,9 @@
 # tasks file for fail2ban
 ---
 - name: install
-  apt:
+  package:
     name: "{{ item }}"
     state: "{{ apt_install_state | default('latest') }}"
-    update_cache: true
-    cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
   with_items: "{{ fail2ban_dependencies }}"
   tags:
     - configuration
@@ -81,6 +79,18 @@
     - fail2ban-jails
 
 - name: start and enable service
+  systemd:
+    name: fail2ban
+    state: started
+    enabled: true
+  tags:
+    - configuration
+    - fail2ban
+    - fail2ban-start-enable-service
+  when: ansible_service_mgr == 'systemd'
+
+
+- name: start and enable service
   service:
     name: fail2ban
     state: started
@@ -89,3 +99,4 @@
     - configuration
     - fail2ban
     - fail2ban-start-enable-service
+  when: ansible_service_mgr != 'systemd'
