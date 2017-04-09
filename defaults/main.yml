@@ -21,4 +21,4 @@ fail2ban_chain: INPUT
 fail2ban_action: '%(action_)s'
 fail2ban_services:
   - name: sshd
-fail2ban_jaild_path: files/jail.d/
+# fail2ban_jaild_path: files/jail.d/
